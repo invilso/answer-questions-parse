@@ -1,0 +1,1 @@
+PATH_TO_CHLOGS = 'path\\vot\\tak'

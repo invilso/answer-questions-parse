@@ -4,6 +4,7 @@ from datetime import date
 import os
 import json
 import sys
+import config
 
 
 class Patterns:
@@ -80,7 +81,7 @@ class Chlogs:
     def parse(self):
         start_time = time.time()
         for key, file in enumerate(self.files):
-            p = Parser('chlogs/'+file)
+            p = Parser(config.PATH_TO_CHLOGS+'\\'+file)
             self.addToDatabase(p.parseLines())
             sys.stdout.write('\033[K' + f"[PROGRESS]: {key}/{len(self.files)} File: {file}" + '\r')
             print()
@@ -88,5 +89,5 @@ class Chlogs:
             print(f'[DONE]: {len(self.database)} questions parsed! Completed in {time.time() - start_time} seconds.')
     
 
-c = Chlogs('C:\\Users\\invilso\\Desktop\\Projects\\answer-questions-ht3\\chlogs')
+c = Chlogs(config.PATH_TO_CHLOGS)
 c.parse()
