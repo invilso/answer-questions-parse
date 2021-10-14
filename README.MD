@@ -6,7 +6,7 @@ git clone https://github.com/invilso/banlist-tool-fastapi.git
 ```
 Переходим в директорию:
 ```
-cd banlist-tool-fastapi
+cd answer-questions-parse
 ```
 Активируем виртуальное окружение:
 ```
