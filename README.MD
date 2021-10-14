@@ -2,7 +2,7 @@
 ## Установка:
 Клонируем репозиторий:
 ```
-git clone https://github.com/invilso/banlist-tool-fastapi.git
+git clone https://github.com/invilso/answer-questions-parse.git
 ```
 Переходим в директорию:
 ```
